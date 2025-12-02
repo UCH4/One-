@@ -4,7 +4,7 @@
 
 Aplicación móvil diseñada para la organización, gestión y búsqueda de partidos de fútbol amateur en tiempo real. Permite a los usuarios crear partidos en ubicaciones específicas y gestionar solicitudes de otros jugadores que deseen unirse para cubrir las posiciones faltantes.
 
-## 🚀 Tecnologías Utilizadas
+##  Tecnologías Utilizadas
 
 | Categoría | Tecnología | Uso |
 | :--- | :--- | :--- |
@@ -13,7 +13,7 @@ Aplicación móvil diseñada para la organización, gestión y búsqueda de part
 | **Autenticación** | Firebase Authentication | Gestión de sesiones de usuario (registro, inicio de sesión). |
 | **Almacenamiento** | SwiftKeychainWrapper | Almacenamiento seguro de credenciales de usuario. |
 
-## ✨ Características Principales
+##  Características Principales
 
 * **Autenticación de Jugadores:** Registro y login de usuarios a través de Firebase Auth.
 * **Creación de Partidos:** Los usuarios pueden establecer la dirección, fecha, hora y posición solicitada para un nuevo partido.
@@ -23,7 +23,7 @@ Aplicación móvil diseñada para la organización, gestión y búsqueda de part
 * **Actualizaciones en Tiempo Real:** Uso de *listeners* de Firestore para reflejar el estado de los partidos inmediatamente en la interfaz.
 * **Indicadores Visuales:** Celdas de tabla con códigos de color para identificar rápidamente el estado de confirmación de un partido (Verde, Amarillo, Rojo).
 
-## 🛠️ Instalación y Configuración
+##  Instalación y Configuración
 
 Para ejecutar este proyecto localmente, sigue estos pasos:
 
@@ -49,7 +49,7 @@ Para ejecutar este proyecto localmente, sigue estos pasos:
 4.  **Ejecutar:**
     * Selecciona un simulador o dispositivo iOS y ejecuta el proyecto desde Xcode.
 
-## 📈 Futuras Mejoras (Roadmap)
+## Futuras Mejoras (Roadmap)
 
 Este proyecto está en continua evolución. Las siguientes funcionalidades representan los pasos clave para escalar y modernizar la aplicación:
 
