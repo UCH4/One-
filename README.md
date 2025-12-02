@@ -1,6 +1,6 @@
 # One
 
-![Placeholder de Logo - Reemplazar por tu logo aquí](https://placehold.co/400x150/007AFF/FFFFFF?text=ONE+APP)
+![ponele que un logo](https://placehold.co/400x150/007AFF/FFFFFF?text=ONE+)
 
 Aplicación móvil diseñada para la organización, gestión y búsqueda de partidos de fútbol amateur en tiempo real. Permite a los usuarios crear partidos en ubicaciones específicas y gestionar solicitudes de otros jugadores que deseen unirse para cubrir las posiciones faltantes.
 
