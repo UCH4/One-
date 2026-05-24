@@ -1,0 +1,13 @@
+# This project has migrated to Swift Package Manager (SPM).
+# CocoaPods is no longer used. Do NOT run `pod install`.
+#
+# Dependencies to add via SPM (Xcode > File > Add Packages…):
+# - Firebase (https://github.com/firebase/firebase-ios-sdk)
+#   Add only the products you use: FirebaseAuth, FirebaseFirestore, FirebaseStorage, FirebaseAnalytics, etc.
+# - Google Maps SDK (https://github.com/googlemaps/google-maps-ios)
+#   Products: GoogleMaps, GooglePlaces (según necesidad)
+# - SwiftKeychainWrapper (https://github.com/jrendel/SwiftKeychainWrapper)
+#
+# After adding via SPM, you can safely delete this Podfile and any leftover Pods/ directory.
+
+# Intentionally left blank to disable CocoaPods for this project.

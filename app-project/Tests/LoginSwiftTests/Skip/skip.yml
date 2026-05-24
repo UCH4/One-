@@ -1,0 +1,3 @@
+# # Skip configuration for LoginSwift module
+#build:
+#  contents:
