@@ -5,7 +5,6 @@
 //            registrarButtonTapped, volverButtonTapped.
 
 import SwiftUI
-import SkipFirebase
 import FirebaseFirestore
 import FirebaseAuth
 

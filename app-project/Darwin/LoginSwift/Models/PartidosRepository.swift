@@ -6,9 +6,8 @@
 //
 
 import Foundation
-import FirebaseFirestore
-import FirebaseAuth
-
+import SkipFirebaseFirestore
+import SkipFirebaseAuth 
 class PartidosRepository {
     
     // SINGLETON: Una única instancia compartida para toda la app

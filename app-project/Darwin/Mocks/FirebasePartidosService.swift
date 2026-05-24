@@ -6,8 +6,7 @@
 //
 
 import Foundation
-import FirebaseFirestore // Mantiene la compatibilidad nativa con las APIs de Firebase
-
+import FirebaseFirestore
 
 final class FirebasePartidosService: PartidosDataService {
     private let db = Firestore.firestore()

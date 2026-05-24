@@ -4,7 +4,7 @@
 //            posicionPickerView, posicionlbl, guardarbutton → savebutton.
 
 import SwiftUI
-import SkipFirebase
+import Firebase
 import FirebaseFirestore // Mantiene la compatibilidad nativa con las APIs de Firebase
 
 import FirebaseAuth

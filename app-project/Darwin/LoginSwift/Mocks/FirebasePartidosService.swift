@@ -6,8 +6,7 @@
 //
 
 import Foundation
-import FirebaseFirestore
-
+import SkipFirebaseFirestore
 final class FirebasePartidosService: PartidosDataService {
     private let db = Firestore.firestore()
     private var cacheSolicitudesPorPartido: [String: (timestamp: Date, data: [Solicitud])] = [:]

@@ -1,6 +1,5 @@
 import Foundation
-import FirebaseFirestore
-
+import SkipFirebaseFirestore
 // Modelo compartido de Jugador (usado por Solicitud.jugadorInfo)
 struct Jugador: Equatable, Hashable {
     var id: String

@@ -1,16 +1,7 @@
 import Foundation
-
-#if canImport(FirebaseCore)
-import FirebaseCore
-#endif
-
-#if canImport(FirebaseAuth)
+import FirebaseFirestore
 import FirebaseAuth
-#endif
-
-#if canImport(FirebaseFirestore)
-import FirebaseFirestore // Mantiene la compatibilidad nativa con las APIs de Firebase
-#endif
+import FirebaseCore
 
 // Modelo compartido de Jugador (usado por Solicitud.jugadorInfo)
 struct Jugador: Equatable, Hashable {

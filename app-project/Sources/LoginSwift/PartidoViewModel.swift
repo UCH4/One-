@@ -3,10 +3,8 @@
 // Reemplaza el código de Firestore disperso en HomeViewController y PartidosTableViewController.
 
 import SwiftUI
-import SkipFirebase
-import FirebaseFirestore // Mantiene la compatibilidad nativa con las APIs de Firebase
-
 import FirebaseAuth
+import FirebaseFirestore
 
 // MARK: - Modelo de datos
 struct Partido: Identifiable, Codable {

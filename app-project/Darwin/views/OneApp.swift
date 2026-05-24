@@ -3,9 +3,8 @@
 // Compatible con Skip (sin UIKit).
 
 import SwiftUI
-#if canImport(FirebaseCore)
+
 import FirebaseCore
-#endif
 
 @main
 struct OneApp: App {

@@ -3,9 +3,7 @@
 // Reemplaza el código de FirebaseAuth disperso en LoginViewController y RecordViewController.
 
 import SwiftUI
-import SkipFirebase
-
-import FirebaseAuth
+import FirebaseAuth 
 
 @MainActor
 class AuthViewModel: ObservableObject {
