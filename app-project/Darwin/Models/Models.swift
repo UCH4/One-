@@ -1,10 +1,7 @@
-import Foundation
-import Firebase
-import FirebaseFirestore
-import FirebaseAuth
-import FirebaseCore
+import SkipFirebaseCore
+import SkipFirebaseAuth
+import SkipFirebaseFirestore
 
-// Modelo compartido de Jugador (usado por Solicitud.jugadorInfo)
 struct Jugador: Equatable, Hashable {
     var id: String
     var nombre: String
@@ -13,7 +10,6 @@ struct Jugador: Equatable, Hashable {
     var apellido: String
 }
 
-// Solicitud centralizada con jugadorInfo opcional para pantallas que lo necesiten
 struct Solicitud: Equatable, Hashable {
     var id_solicitud: String
     var id_jugador_solicitante: String
@@ -21,7 +17,7 @@ struct Solicitud: Equatable, Hashable {
     var id_partido: String?
     var aceptar_solicitado: String?
     var aceptar_solicitante: String?
-    var jugadorInfo: Jugador? // opcional; no rompe pantallas que no lo usan
+    var jugadorInfo: Jugador?
 }
 
 struct Partido: Equatable, Hashable {
@@ -34,7 +30,6 @@ struct Partido: Equatable, Hashable {
     var confirmacion_2: String
 }
 
-// Composición de modelos centrales
 struct PartidoConSolicitud: Equatable, Hashable {
     var partido: Partido
     var solicitud: Solicitud?

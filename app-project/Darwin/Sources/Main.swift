@@ -1,5 +1,4 @@
 import SwiftUI
-import LoginSwiftApp
 
 private typealias AppRootView = LoginSwiftRootView
 private typealias AppDelegate = LoginSwiftAppDelegate
@@ -78,7 +77,7 @@ typealias AppType = NSApplication
         AppDelegate.shared.onLaunch()
     }
 
-    func applicationWillTerminate(_ application: Notification) {
+    func applicationWillTerminate(_ application: UIApplication) {
         AppDelegate.shared.onDestroy()
     }
     #endif

@@ -1,12 +1,12 @@
-// swift-tools-version: 6.0
+// swift-tools-version: 5.9
 import PackageDescription
 
 let package = Package(
     name: "LoginSwift",
     defaultLocalization: "en",
-    platforms: [.iOS(.v17), .macOS(.v14), .tvOS(.v17), .watchOS(.v10), .macCatalyst(.v17)],
+    platforms: [.iOS(.v17), .macOS(.v14)],
     products: [
-        .library(name: "LoginSwift", type: .dynamic, targets: ["LoginSwift"]),
+        .library(name: "LoginSwift", type: .dynamic, targets: ["LoginSwift"])
     ],
     dependencies: [
         .package(url: "https://source.skip.tools/skip.git", from: "1.6.0"),
@@ -20,6 +20,7 @@ let package = Package(
             .product(name: "SkipFuseUI", package: "skip-fuse-ui"),
             .product(name: "SkipFuse", package: "skip-fuse"),
             .product(name: "SkipModel", package: "skip-model"),
+            .product(name: "SkipFirebaseCore", package: "skip-firebase"),       
             .product(name: "SkipFirebaseFirestore", package: "skip-firebase"),
             .product(name: "SkipFirebaseAuth", package: "skip-firebase"),
         ], resources: [.process("Resources")],

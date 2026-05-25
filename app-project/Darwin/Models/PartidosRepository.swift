@@ -6,8 +6,9 @@
 //
 
 import Foundation
-import FirebaseAuth
-import FirebaseFirestore
+import SkipFirebaseCore
+import SkipFirebaseAuth
+import SkipFirebaseFirestore
 
 class PartidosRepository {
     

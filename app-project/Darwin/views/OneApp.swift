@@ -4,8 +4,7 @@
 
 import SwiftUI
 
-import FirebaseCore
-
+import SkipFirebaseCore   // antes: import FirebaseCore
 @main
 struct OneApp: App {
 

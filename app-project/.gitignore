@@ -86,3 +86,10 @@ Carthage/Build/
 **/fastlane/README.md
 **/fastlane/Preview.html
 **/fastlane/test_output
+# Credenciales de Firebase
+*GoogleService-Info.plist
+*google-services.json
+
+# Archivos de entorno de Skip
+.env
+Skip.env

@@ -7,7 +7,9 @@
 
 import Foundation
 
-import FirebaseFirestore
+import SkipFirebaseCore
+import SkipFirebaseAuth
+import SkipFirebaseFirestore
 
 final class FirebasePartidosService: PartidosDataService {
     private let db = Firestore.firestore()
@@ -130,8 +132,7 @@ final class FirebasePartidosService: PartidosDataService {
         )
     }
 }
-import FirebaseFirestore
-
+import SkipFirebaseFirestore
 extension Query {
     func getDocumentsAsync() async throws -> QuerySnapshot {
         try await withCheckedThrowingContinuation { (continuation: CheckedContinuation<QuerySnapshot, Error>) in
