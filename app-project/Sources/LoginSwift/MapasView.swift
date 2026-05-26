@@ -10,8 +10,8 @@ struct MapasView: View {
 
     @EnvironmentObject var partidoVM: PartidoViewModel
 
-    // Región inicial centrada en Buenos Aires
-    @State private var region = MKCoordinateRegion(
+    // Región inicial centrada en Buenos Aires con tipo EXPLICITO
+    @State private var region: MKCoordinateRegion = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: -34.6037, longitude: -58.3816),
         span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
     )
@@ -20,7 +20,9 @@ struct MapasView: View {
         // MARK: Mapa nativo (era MKMapView 7dn-Y5-Kpi, frame full screen)
         // En iOS → MapKit nativo
         // En Android via Skip → Google Maps nativo
-        Map(coordinateRegion: $region, annotationItems: anotaciones) { pin in
+        
+        // CORRECCIÓN: Estructura explícita de inicialización compatible con Kotlin
+        Map(coordinateRegion: $region, interactionModes: MapInteractionModes.all, showsUserLocation: false, userTrackingMode: nil, annotationItems: anotaciones) { (pin: PartidoPin) in
             MapAnnotation(coordinate: pin.coordinate) {
                 VStack(spacing: 0) {
                     ZStack {
@@ -28,7 +30,7 @@ struct MapasView: View {
                             .fill(colorParaEstado(pin.estado))
                             .frame(width: 36, height: 36)
                         Image(systemName: "sportscourt.fill")
-                            .foregroundStyle(.white)
+                            .foregroundStyle(Color.white)
                             .font(.system(size: 16))
                     }
                     Text(pin.posicion)
@@ -39,10 +41,9 @@ struct MapasView: View {
                 }
             }
         }
-        .edgesIgnoringSafeArea(.all)
-        // era frame x="8" y="20" width="374" height="732"
+        .edgesIgnoringSafeArea(Edge.Set.all) // CORRECCIÓN: Tipo completo Edge.Set.all
         .navigationTitle("Mapa de Partidos")
-        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarTitleDisplayMode(NavigationBarItem.TitleDisplayMode.inline) // CORRECCIÓN: Tipo completo TitleDisplayMode.inline
     }
 
     // Convierte los partidos a anotaciones del mapa
@@ -65,9 +66,9 @@ struct MapasView: View {
 
     private func colorParaEstado(_ estado: Partido.EstadoPartido) -> Color {
         switch estado {
-        case .confirmado: return .green
-        case .pendiente:  return .orange
-        case .cancelado:  return .red
+        case .confirmado: return Color.green
+        case .pendiente:  return Color.orange
+        case .cancelado:  return Color.red
         }
     }
 }
